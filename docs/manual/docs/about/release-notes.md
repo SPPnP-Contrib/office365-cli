@@ -1,5 +1,75 @@
 # Release notes
 
+## [v1.2.0](https://github.com/SharePoint/office365-cli/releases/tag/v1.2.0)
+
+### New commands
+
+**SharePoint Online:**
+
+- [spo file remove](../cmd/spo/file/file-remove.md) - removes the specified file [#287](https://github.com/SharePoint/office365-cli/issues/287)
+- [spo hubsite data get](../cmd/spo/hubsite/hubsite-data-get.md) - gets hub site data for the specified site [#394](https://github.com/SharePoint/office365-cli/issues/394)
+- [spo hubsite theme sync](../cmd/spo/hubsite/hubsite-theme-sync.md) - applies any theme updates from the parent hub site [#401](https://github.com/SharePoint/office365-cli/issues/401)
+- [spo listitem add](../cmd/spo/listitem/listitem-add.md) - creates a list item in the specified list [#270](https://github.com/SharePoint/office365-cli/issues/270)
+- [spo listitem remove](../cmd/spo/listitem/listitem-remove.md) - removes the specified list item [#272](https://github.com/SharePoint/office365-cli/issues/272)
+- [spo page control get](../cmd/spo/page/page-control-get.md) - gets information about the specific control on a modern page [#414](https://github.com/SharePoint/office365-cli/issues/414)
+- [spo page control list](../cmd/spo/page/page-control-list.md) - lists controls on the specific modern page [#413](https://github.com/SharePoint/office365-cli/issues/413)
+- [spo page get](../cmd/spo/page/page-get.md) - gets information about the specific modern page [#360](https://github.com/SharePoint/office365-cli/issues/360)
+- [spo propertybag set](../cmd/spo/propertybag/propertybag-set.md) - sets the value of the specified property in the property bag [#393](https://github.com/SharePoint/office365-cli/issues/393)
+- [spo web clientsidewebpart list](../cmd/spo/web/web-clientsidewebpart-list.md) - lists available client-side web parts [#367](https://github.com/SharePoint/office365-cli/issues/367)
+
+**Microsoft Graph:**
+
+- [graph user get](../cmd/graph/user/user-get.md) - gets information about the specified user [#326](https://github.com/SharePoint/office365-cli/issues/326)
+- [graph user list](../cmd/graph/user/user-list.md) - lists users matching specified criteria [#327](https://github.com/SharePoint/office365-cli/issues/327)
+
+### Changes
+
+- added support for authenticating using credentials solving [#388](https://github.com/SharePoint/office365-cli/issues/388)
+
+## [v1.1.0](https://github.com/SharePoint/office365-cli/releases/tag/v1.1.0)
+
+### New commands
+
+**SharePoint Online:**
+
+- [spo file get](../cmd/spo/file/file-get.md) - gets information about the specified file [#282](https://github.com/SharePoint/office365-cli/issues/282)
+- [spo page add](../cmd/spo/page/page-add.md) - creates modern page [#361](https://github.com/SharePoint/office365-cli/issues/361)
+- [spo page list](../cmd/spo/page/page-list.md) - lists all modern pages in the given site [#359](https://github.com/SharePoint/office365-cli/issues/359)
+- [spo page set](../cmd/spo/page/page-set.md) - updates modern page properties [#362](https://github.com/SharePoint/office365-cli/issues/362)
+- [spo propertybag remove](../cmd/spo/propertybag/propertybag-remove.md) - removes specified property from the property bag [#291](https://github.com/SharePoint/office365-cli/issues/291)
+- [spo sitedesign apply](../cmd/spo/sitedesign/sitedesign-apply.md) - applies a site design to an existing site collection [#339](https://github.com/SharePoint/office365-cli/issues/339)
+- [spo theme get](../cmd/spo/theme/theme-get.md) - gets custom theme information [#349](https://github.com/SharePoint/office365-cli/issues/349)
+- [spo theme list](../cmd/spo/theme/theme-list.md) - retrieves the list of custom themes [#332](https://github.com/SharePoint/office365-cli/issues/332)
+- [spo theme remove](../cmd/spo/theme/theme-remove.md) - removes existing theme [#331](https://github.com/SharePoint/office365-cli/issues/331)
+- [spo theme set](../cmd/spo/theme/theme-set.md) - add or update a theme [#330](https://github.com/SharePoint/office365-cli/issues/330), [#340](https://github.com/SharePoint/office365-cli/issues/340)
+- [spo web get](../cmd/spo/web/web-get.md) - retrieve information about the specified site [#188](https://github.com/SharePoint/office365-cli/issues/188)
+
+**Microsoft Graph:**
+
+- [graph o365group remove](../cmd/graph/o365group/o365group-remove.md) - removes an Office 365 Group [#309](https://github.com/SharePoint/office365-cli/issues/309)
+- [graph o365group restore](../cmd/graph/o365group/o365group-restore.md) - restores a deleted Office 365 Group [#346](https://github.com/SharePoint/office365-cli/issues/346)
+- [graph siteclassification get](../cmd/graph/siteclassification/siteclassification-get.md) - gets site classification configuration [#303](https://github.com/SharePoint/office365-cli/issues/303)
+
+**Azure Management Service:**
+
+- [azmgmt connect](../cmd/azmgmt/connect.md) - connects to the Azure Management Service [#378](https://github.com/SharePoint/office365-cli/issues/378)
+- [azmgmt disconnect](../cmd/azmgmt/disconnect.md) - disconnects from the Azure Management Service [#378](https://github.com/SharePoint/office365-cli/issues/378)
+- [azmgmt status](../cmd/azmgmt/status.md) - shows Azure Management Service connection status [#378](https://github.com/SharePoint/office365-cli/issues/378)
+- [azmgmt flow environment get](../cmd/azmgmt/flow/flow-environment-get.md) - gets information about the specified Microsoft Flow environment [#380](https://github.com/SharePoint/office365-cli/issues/380)
+- [azmgmt flow environment list](../cmd/azmgmt/flow/flow-environment-list.md) - lists Microsoft Flow environments in the current tenant [#379](https://github.com/SharePoint/office365-cli/issues/379)
+- [azmgmt flow get](../cmd/azmgmt/flow/flow-get.md) - gets information about the specified Microsoft Flow [#382](https://github.com/SharePoint/office365-cli/issues/382)
+- [azmgmt flow list](../cmd/azmgmt/flow/flow-list.md) - lists Microsoft Flows in the given environment [#381](https://github.com/SharePoint/office365-cli/issues/381)
+
+### Updated commands
+
+**Microsoft Graph:**
+
+- [graph o365group list](../cmd/graph/o365group/o365group-list.md) - added support for listing deleted Office 365 Groups [#347](https://github.com/SharePoint/office365-cli/issues/347)
+
+### Changes
+
+- fixed bug in retrieving Office 365 groups in immersive mode solving [#351](https://github.com/SharePoint/office365-cli/issues/351)
+
 ## [v1.0.0](https://github.com/SharePoint/office365-cli/releases/tag/v1.0.0)
 
 ### Breaking changes
